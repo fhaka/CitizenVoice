@@ -1,0 +1,239 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.contact-card {
+  width: 520px;
+  max-width: 95vw;
+  border-radius: 14px;
+  padding: 22px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.contact-card h1 {
+  margin: 0 0 6px;
+}
+
+.contact-card p {
+  margin: 0 0 16px;
+  opacity: 0.8;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ✅ FIX PhonePrefix sizes/alignment */
+.phone-group {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  align-items: stretch; /* same height */
+}
+
+.phone-prefix {
+  width: 190px; /* adjust if you want smaller */
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+  background: #fff;
+  height: 44px; /* matches input */
+  box-sizing: border-box;
+}
+
+.phone-group input[name="phone"] {
+  flex: 1;
+  min-width: 0; /* prevents shrinking weird */
+  height: 44px; /* matches prefix */
+  box-sizing: border-box;
+}
+
+/* ✅ Black submit button */
+.contact-submit {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+}
+
+.contact-submit:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.contact-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.citizen-hero-row{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+.citizen-hero-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.pill-link{
+  padding:8px 12px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.9);
+  font-weight:800;
+  text-decoration:none;
+  color:#111;
+  border:1px solid rgba(0,0,0,0.12);
+}
+
+.card-cta{
+  margin-top:10px;
+  font-weight:900;
+  opacity:0.9;
+}
+
+.citizen-grid-2{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+@media (max-width: 900px){
+  .citizen-grid-2{ grid-template-columns:1fr; }
+}
+
+.section-card{
+  background: rgba(255,255,255,0.92);
+  border-radius:14px;
+  padding:14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+  text-align:left;
+}
+
+.section-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:10px;
+}
+
+.muted{ opacity:0.75; }
+
+.mini-links{
+  margin-top:10px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+@media (max-width: 520px){
+  .mini-links{ grid-template-columns:1fr; }
+}
+
+.mini-link{
+  display:inline-block;
+  text-decoration:none;
+  font-weight:800;
+  color:#111;
+  background: rgba(255,255,255,0.8);
+  border:1px solid rgba(0,0,0,0.12);
+  padding:10px 12px;
+  border-radius:12px;
+}
+
+.mini-note{
+  margin-top:10px;
+  padding:10px 12px;
+  border-radius:12px;
+  background: rgba(0,0,0,0.04);
+  font-weight:600;
+}
+
+.resource-grid{
+  margin-top:10px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.resource-tile{
+  text-decoration:none;
+  color:#111;
+  padding:12px;
+  border-radius:12px;
+  background: rgba(255,255,255,0.8);
+  border:1px solid rgba(0,0,0,0.12);
+  font-weight:900;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.citizen-footer-cta{
+  margin-top:18px;
+  background: rgba(255,255,255,0.92);
+  border-radius:14px;
+  padding:14px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+.footer-cta-actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.btn-outline{
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.8);
+  font-weight:900;
+  text-decoration:none;
+  color:#111;
+}
+
+.btn-dark{
+  padding:10px 14px;
+  border-radius:12px;
+  border:1px solid rgba(0,0,0,0.2);
+  background:#111;
+  color:#fff;
+  font-weight:900;
+  text-decoration:none;
+}

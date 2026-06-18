@@ -1,0 +1,57 @@
+# ===============================
+# Environment variables (SECURITY)
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Node.js dependencies
+# ===============================
+node_modules/
+
+# ===============================
+# Build outputs
+# ===============================
+dist/
+dist-ssr/
+build/
+
+# ===============================
+# Runtime uploads
+# ===============================
+uploads/
+backend/uploads/
+
+# ===============================
+# Logs
+# ===============================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ===============================
+# OS files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Editor / IDE settings
+# ===============================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ===============================
+# Misc
+# ===============================
+*.local

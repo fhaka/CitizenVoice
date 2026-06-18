@@ -1,0 +1,26 @@
+.lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.lang-switcher select {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+.lang-switcher select:hover {
+  text-decoration: underline;
+}
+
+/* Compact mode (optional) */
+.lang-switcher.compact select {
+  font-size: 13px;
+}

@@ -1,0 +1,257 @@
+/* src/pages/HelpCenter.css */
+.help-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: left;
+}
+
+.help-header {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.help-title {
+  margin: 0 0 6px;
+  font-size: 28px;
+  line-height: 1.15;
+}
+
+.help-sub {
+  margin: 0 0 14px;
+  opacity: 0.8;
+  line-height: 1.45;
+}
+
+.help-search {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.help-search input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  outline: none;
+}
+
+.help-clear {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: white;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.help-sections {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.help-section {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.help-section-title {
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.help-accordion {
+  display: grid;
+  gap: 10px;
+}
+
+.help-item {
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.help-q {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: #fafafa;
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.help-chevron {
+  opacity: 0.6;
+  font-weight: 900;
+}
+
+.help-a {
+  padding: 12px 14px 14px;
+  background: white;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.help-a p {
+  margin: 0 0 10px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.help-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.help-link {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.help-empty {
+  margin-top: 16px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.help-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.help-dot {
+  opacity: 0.5;
+}
+
+.help-pill {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,0.06);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.help-cta-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.help-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  background: black;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.help-btn.secondary {
+  background: white;
+  color: black;
+  border: 1px solid rgba(0,0,0,0.14);
+}
+
+/* =========================
+   How it works (FIXED)
+   ========================= */
+
+.how-grid {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+
+  /* 2 columns desktop */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  /* ✅ IMPORTANT: stretch items so uneven text doesn't break layout */
+  align-items: stretch;
+}
+
+@media (max-width: 720px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.how-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 14px;
+
+  /* ✅ Use flex so card content grows nicely */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 8px;
+
+  /* small polish */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+}
+
+.how-step {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.06);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+}
+
+.how-title {
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.how-text {
+  opacity: 0.85;
+  line-height: 1.5;
+
+  /* ✅ key: lets cards equalize height across the grid */
+  flex: 1;
+}
+
+.help-footer {
+  margin-top: 16px;
+}
+
+.help-footer-card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.help-footer-title {
+  font-weight: 900;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.help-footer-text {
+  opacity: 0.85;
+  line-height: 1.45;
+}
