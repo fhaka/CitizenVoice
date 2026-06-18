@@ -5,8 +5,8 @@ CitizenVoice is a full-stack web application designed to empower citizens to rep
 📌 Project Overview
 
 Project Name: CitizenVoice
-Authors: Florian Haka, Kristi Mata
-Repository: https://github.com/FlorianHaka/CitizenVoice
+Authors: Florian Haka,
+Repository: https://github.com/fhaka/CitizenVoice
 
 CitizenVoice serves as a digital bridge between citizens and local authorities by enabling transparent issue reporting, monitoring, and resolution tracking. It is built as a modern web application using React on the frontend and Node.js with Express on the backend, backed by a MySQL relational database.
 
